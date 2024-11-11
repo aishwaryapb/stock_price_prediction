@@ -1,3 +1,3 @@
 outputs/
 data/clean
-data/merged_data.csv
+data/*.csv
