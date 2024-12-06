@@ -14,7 +14,7 @@ With the use of machine learning algorithms, we want to predict the next quarter
 3. [Securities](https://www.kaggle.com/datasets/dgawlik/nyse?select=securities.csv) - Sector information of different stocks in NYSE.
 
 ## Project Structure
-1. `data` - contains the `raw` datasets and `clean` (or merged) datasets in their respective folders.
+1. `data` - contains the `raw` datasets and `clean` datasets in their respective folders and the final `merged_data.csv`.
 2. `data_cleaning`
     - `outputs` - contains intermediate results data
     - `.ipynb`file - code that cleans and merges the data.
@@ -23,11 +23,17 @@ With the use of machine learning algorithms, we want to predict the next quarter
     - `.ipynb`file - code that explores the data, corelation between the features and target variable, feature engineering
 4. `model_development`
     - `outputs` - contains intermediate results data
-    - `.ipynb`file - code that builds, trains and tests different models
-5. `model_analysis`
-    - `outputs` - contains intermediate results data
-    - `.ipynb`file - code that analyses the performance of all the developed models
-6. `final.ipynb` - Model selection and conclusion about the project
+    - Multiple `.ipynb`files - Each file corresponds to a different model and contains code for training, testing and evaluating a model.
+
+## How to run the project
+1. Open `data_cleaning/data_cleaning.ipynb` and run all the cells. This will generated the final `merged_data.csv` and `merged_scaled_data.csv`.
+2. Open `data_exploration/data_exploration.ipynb` and run all the cells. This will generate all the plots to help analyse the final dataset. It also creates `data/clean/lr_data.csv` which will be used by the Linear Regression Model.
+3. Run all the cells in the following files in the folder `model_development` to build, train, test and evaluate the respective models.
+    - Linear Regression Model - `linear_model.ipynb`
+    - Logistic Regression Model - `logistic_model.ipynb`
+    - LSTM Model - `lstm_model.ipynb`
+    - Random Forest Model - `random_forest_model.ipynb`
+
 
 ## Contributors
 1. [Aishwarya Prakash Bannimatti](mailto:abannima@uwo.ca)
