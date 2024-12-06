@@ -31,7 +31,7 @@ With the use of machine learning algorithms, we want to predict the next quarter
 3. Run all the cells in the following files in the folder `model_development` to build, train, test and evaluate the respective models.
     - Linear Regression Model - `linear_model.ipynb`
     - Logistic Regression Model - `logistic_model.ipynb`
-    - LSTM Model - `lstm_model.ipynb`
+    - LSTM Model - `lstm_model_1.ipynb` and `lstm_model_2.ipynb`
     - Random Forest Model - `random_forest_model.ipynb`
 
 
